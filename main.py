@@ -1,7 +1,7 @@
 import random
 
 class NumberGuessingGame:
-    def __init__(self):
+    def __init__(self):    # DEF IS USED FOR DEFINE A FUNCTION
         self.number = random.randint(1, 100)
         self.guesses = 0
         self.high_score = float('inf')
@@ -28,7 +28,7 @@ class NumberGuessingGame:
     def checkGuess(self, guess):
         if guess > self.number:
             print("👇 Lower Number Please")
-        elif guess < self.number:
+        elif guess < self.number: 
             print("👆 Higher Number Please")
         else:
             print(f"\n✅ You guessed the number {self.number} correctly in {self.guesses} attempts!")
